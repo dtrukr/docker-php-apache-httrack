@@ -2,7 +2,7 @@ FROM php:5-apache
 
 RUN apt-get update && \
     apt-get install -y --force-yes httrack && \
-    apt-get clean
+    apt-get install -y --force-yes rsync
 
 COPY ./php.ini /usr/local/etc/php/
 
